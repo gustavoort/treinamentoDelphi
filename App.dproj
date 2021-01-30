@@ -108,13 +108,13 @@
             <Form>viewBase</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="uPacote.pas">
-            <Form>viewPacote</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
         <DCCReference Include="uFuncoes.pas"/>
         <DCCReference Include="uCliente.pas">
             <Form>viewCliente</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="uPacote.pas">
+            <Form>viewPacote</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">

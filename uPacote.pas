@@ -3,9 +3,9 @@ unit uPacote;
 interface
 
 uses
-  uTelaBase, Data.DB, Vcl.StdCtrls, Vcl.Mask, Vcl.DBCtrls, Vcl.Grids,
-  Vcl.DBGrids, Vcl.ComCtrls, Vcl.Controls, Vcl.Buttons, System.Classes,
-  Vcl.ExtCtrls;
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uTelaBase, Data.DB, Vcl.Grids,
+  Vcl.DBGrids, Vcl.ComCtrls, Vcl.StdCtrls, Vcl.Buttons, Vcl.ExtCtrls;
 
 type
   TviewPacote = class(TviewBase)
@@ -26,7 +26,7 @@ implementation
 procedure TviewPacote.FormCreate(Sender: TObject);
 begin
   inherited;
-  Titulo := 'Cadastro de Pacotes';
+  Titulo := 'Cadastro de Pacote';
 end;
 
 end.

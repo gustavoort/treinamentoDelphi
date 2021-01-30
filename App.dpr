@@ -4,9 +4,9 @@ uses
   Vcl.Forms,
   uPrincipal in 'uPrincipal.pas' {viewPrincipal},
   uTelaBase in 'uTelaBase.pas' {viewBase},
-  uPacote in 'uPacote.pas' {viewPacote},
   uFuncoes in 'uFuncoes.pas',
-  uCliente in 'uCliente.pas' {viewCliente};
+  uCliente in 'uCliente.pas' {viewCliente},
+  uPacote in 'uPacote.pas' {viewPacote};
 
 {$R *.res}
 
