@@ -24,7 +24,6 @@ object viewPrincipal: TviewPrincipal
     Color = 8406295
     ParentBackground = False
     TabOrder = 0
-    ExplicitWidth = 781
     object SpeedButton1: TSpeedButton
       Left = 203
       Top = 0
@@ -198,7 +197,7 @@ object viewPrincipal: TviewPrincipal
         0000000000000000000000000000000000000000000000000000000000000000
         0000000000000000000000000000000000000000000000000000}
       OnClick = SpeedButton1Click
-      ExplicitLeft = 0
+      ExplicitLeft = 206
     end
     object SpeedButton2: TSpeedButton
       Left = 273
@@ -207,6 +206,7 @@ object viewPrincipal: TviewPrincipal
       Height = 60
       Align = alLeft
       Flat = True
+      OnClick = SpeedButton2Click
       ExplicitLeft = 70
     end
     object SpeedButton3: TSpeedButton
@@ -3018,8 +3018,6 @@ object viewPrincipal: TviewPrincipal
     Color = 8406295
     ParentBackground = False
     TabOrder = 1
-    ExplicitTop = 395
-    ExplicitWidth = 781
     object Label1: TLabel
       Left = 0
       Top = 0

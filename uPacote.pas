@@ -1,4 +1,4 @@
-unit uCliente;
+unit uPacote;
 
 interface
 
@@ -8,9 +8,8 @@ uses
   Vcl.ExtCtrls;
 
 type
-  TviewCliente = class(TviewBase)
+  TviewPacote = class(TviewBase)
     procedure FormCreate(Sender: TObject);
-
   private
     { Private declarations }
   public
@@ -18,17 +17,16 @@ type
   end;
 
 var
-  viewCliente: TviewCliente;
+  viewPacote: TviewPacote;
 
 implementation
 
 {$R *.dfm}
 
-
-procedure TviewCliente.FormCreate(Sender: TObject);
+procedure TviewPacote.FormCreate(Sender: TObject);
 begin
   inherited;
-  Titulo := 'Cadastro de Clientes';
+  Titulo := 'Cadastro de Pacotes';
 end;
 
 end.
