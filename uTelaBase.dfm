@@ -11,9 +11,12 @@ object viewBase: TviewBase
   Font.Height = -11
   Font.Name = 'Segoe UI'
   Font.Style = []
+  KeyPreview = True
   OldCreateOrder = False
   Position = poScreenCenter
+  OnClose = FormClose
   OnCreate = FormCreate
+  OnKeyPress = FormKeyPress
   OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
@@ -78,6 +81,7 @@ object viewBase: TviewBase
         0000000000000000000000000000000000000000000000000000000000000000
         0000000000000000000000000000000000000000000000000000000000000000
         00000000000000000000}
+      OnClick = btnAdicionarClick
       ExplicitLeft = 3
     end
     object btnEditar: TSpeedButton
@@ -131,6 +135,7 @@ object viewBase: TviewBase
         0000000000000000000000000000000000000000000000000000000000000000
         0000000000000000000000000000000000000000000000000000000000000000
         00000000000000000000}
+      OnClick = btnEditarClick
       ExplicitLeft = 73
     end
     object btnApagar: TSpeedButton
@@ -184,6 +189,7 @@ object viewBase: TviewBase
         0000000000000000000000000000000000000000000000000000000000000000
         0000000000000000000000000000000000000000000000000000000000000000
         00000000000000000000}
+      OnClick = btnApagarClick
       ExplicitLeft = 143
     end
     object SpeedButton5: TSpeedButton
@@ -319,6 +325,7 @@ object viewBase: TviewBase
         0000000000000000000000000000000000000000000000000000000000000000
         0000000000000000000000000000000000000000000000000000000000000000
         00000000000000000000}
+      OnClick = btnPesquisarClick
       ExplicitLeft = 884
     end
     object btnImprimir: TSpeedButton
@@ -380,19 +387,17 @@ object viewBase: TviewBase
     Top = 30
     Width = 1024
     Height = 618
-    ActivePage = tsPesquisa
+    ActivePage = tsFormulario
     Align = alClient
     TabOrder = 1
-    ExplicitTop = 60
-    ExplicitHeight = 588
+    TabPosition = tpBottom
     object tsPesquisa: TTabSheet
       Caption = 'Pesquisa'
-      ExplicitHeight = 560
       object gDados: TDBGrid
         Left = 0
         Top = 0
         Width = 1016
-        Height = 590
+        Height = 592
         Align = alClient
         TabOrder = 0
         TitleFont.Charset = ANSI_CHARSET
@@ -405,12 +410,11 @@ object viewBase: TviewBase
     object tsFormulario: TTabSheet
       Caption = 'Formul'#225'rio'
       ImageIndex = 1
-      ExplicitHeight = 560
       object Panel1: TPanel
         Left = 986
         Top = 0
         Width = 30
-        Height = 590
+        Height = 592
         Align = alRight
         Color = 8406295
         ParentBackground = False
@@ -466,11 +470,12 @@ object viewBase: TviewBase
             0000000000000000000000000000000000000000000000000000000000000000
             0000000000000000000000000000000000000000000000000000000000000000
             00000000000000000000}
-          ExplicitWidth = 64
+          OnClick = btnSalvarClick
+          ExplicitTop = 0
         end
         object btnCancelar: TSpeedButton
           Left = 1
-          Top = 559
+          Top = 561
           Width = 28
           Height = 30
           Align = alBottom
@@ -519,10 +524,19 @@ object viewBase: TviewBase
             0000000000000000000000000000000000000000000000000000000000000000
             0000000000000000000000000000000000000000000000000000000000000000
             00000000000000000000}
+          OnClick = btnCancelarClick
           ExplicitTop = 519
           ExplicitWidth = 64
         end
       end
     end
+  end
+  object cnPadrao: TUniConnection
+    Left = 360
+    Top = 208
+  end
+  object InterBaseUniProvider1: TInterBaseUniProvider
+    Left = 392
+    Top = 208
   end
 end
